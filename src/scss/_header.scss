@@ -1,0 +1,43 @@
+
+header .container {
+
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .logo {
+       // border: 1px solid orange;
+        animation-name: logoLight;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes logoLight {
+        0%   {border: 1px solid red;}
+        25%  {border: 1px solid yellow;}
+        50%  {border: 1px solid orange;}
+        100% {border: 1px solid lawngreen;}
+    }
+
+    .hero {
+        align-items: flex-end;
+        background-image: url('../assets/images/banner-lance-me.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 45rem;
+        display: flex;
+        padding-bottom: 4rem;
+        overflow: hidden;
+        width: 100%;
+
+        h1 {
+            padding: 1rem 0 0;
+            text-align: center;
+            width: 96%;
+
+            @media (max-width: 530px) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
